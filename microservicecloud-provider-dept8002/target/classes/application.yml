@@ -1,0 +1,28 @@
+server:
+  port: 8002
+mybatis:
+  mapper-locations: classpath:com/yunkan/dao/*DaoMapper.xml                       # mapper映射文件
+    
+spring:
+   application:
+    name: microservicecloud-dept 
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
+    url: jdbc:mysql://192.168.74.136:3306/cloudDB02             # 数据库名称
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: microservicecloud-dept8002
+    prefer-ip-address: true
+info: 
+  app.name: microservicecloud-provider-dept8002
+  company.name: mp.yunkannet.com
+  build.artifactId: microservicecloud-provider-dept8002
+  build.version: 0.0.1-SNAPSHOT
+  
+

@@ -1,0 +1,28 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+#网关配置
+zuul: 
+  prefix: /yunkan
+  ignored-services: "*"
+  routes: 
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+info:
+  app.name: yunkan-microcloud
+  company.name: www.yunkan.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

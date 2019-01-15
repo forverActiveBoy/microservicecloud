@@ -1,0 +1,4 @@
+com\yunkan\service\DeptClientServiceFallbackFactory.class
+com\yunkan\service\DeptClientService.class
+com\yunkan\service\DeptClientServiceFallbackFactory$1.class
+com\yunkan\entity\Dept.class

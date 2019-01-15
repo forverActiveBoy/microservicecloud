@@ -1,0 +1,5 @@
+rule\RandomRule_ZY.class
+rule\MySelfRule.class
+com\yunkan\config\ConfigBean.class
+com\yunkan\controller\ConsumerDeptController.class
+com\yunkan\ConsumerDept80.class
